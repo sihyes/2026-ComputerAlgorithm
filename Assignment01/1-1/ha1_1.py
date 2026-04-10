@@ -1,4 +1,4 @@
-import random
+import random #STEP3. to select randomized pivot  (me)
 
 comparison_count = 0 # STEP 2 : 전역변수 to track the number of comparisons (me)
 
@@ -11,7 +11,7 @@ def quick_sort(arr, low, high):
         quick_sort(arr, low, pi - 1)
         quick_sort(arr, pi + 1, high)
 
-def randomized_partition(arr, low, high):
+def randomized_partition(arr, low, high): #STEP 3 : randomized pivot partition 얻기
     # low와 high 사이의 무작위 인덱스를 선택
     rand_pivot_idx = random.randint(low, high)
     
