@@ -1,4 +1,3 @@
-#AI-Generated Code
 def min_postage_stamps(target, stamp_denominations):
     total_stamps_needed = 0
     stamps_used = {}
