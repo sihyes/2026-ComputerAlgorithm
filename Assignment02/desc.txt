@@ -1,0 +1,5 @@
+실행 환경: Python 3.13.9
+
+Task 2-1 실행 명령어: python ha2_1.py
+Task 2-2 실행 명령어: python ha2_2.py
+Task 2-3 실행 명령어: python ha2_3.py

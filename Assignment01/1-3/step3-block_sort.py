@@ -69,7 +69,7 @@ def block_merge_sort(arr):
     # 5. 마지막으로, 작업실(버퍼)로 썼던 배열 끝부분만 다시 정렬해 상태를 복구합니다.
     insertion_sort(arr, buffer_start, n - 1)
 
-# 테스트
+# 테스트(12개원소)
 test_arr = [12, 11, -3, 13, 5, 6, 7, -1, 9, 20, 2, 32]
 block_merge_sort(test_arr)
 print(f"정렬된 배열: {test_arr}")
