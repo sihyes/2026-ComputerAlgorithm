@@ -1,0 +1,36 @@
+procedure FindMaxMin_Naive(A)
+
+1. MIN ← A[0]
+2. MAX ← A[0]
+
+3. for i ← 1 to length(A)-1 do
+
+4.     if A[i] > MAX then
+5.         MAX ← A[i]
+
+6.     if A[i] < MIN then
+7.         MIN ← A[i]
+
+8. return (MIN, MAX)
+
+
+---
+procedure FindMaxMin_DC(A, i, j)
+
+1. if i = j then
+2.     return (A[i], A[i])
+
+3. else if j = i + 1 then
+4.     if A[i] < A[j] then
+5.         return (A[i], A[j])
+6.     else
+7.         return (A[j], A[i])
+
+8. else
+9.     mid ← (i + j) / 2
+
+10.    (minLeft, maxLeft) ← MaxMin(A, i, mid)
+
+11.    (minRight, maxRight) ← MaxMin(A, mid + 1, j)
+
+12.    return (min(minLeft, minRight), max(maxLeft, maxRight))
