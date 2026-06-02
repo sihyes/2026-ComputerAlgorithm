@@ -37,9 +37,9 @@ def findMaxMin_2(A, i, j):
         count = c1 + c2 + 2
         return min(min1, min2), max(max1, max2), count
 
-# # 결과
-# min_val_1, max_val_1, count1 = findMaxMin_1(A)
-# print(f"방법 1 - 최솟값: {min_val_1}, 최댓값: {max_val_1}, 비교 횟수: {count1}")
+# 결과
+min_val_1, max_val_1, count1 = findMaxMin_1(A)
+print(f"방법 1 - 최솟값: {min_val_1}, 최댓값: {max_val_1}, 비교 횟수: {count1}")
 
 min_val_2, max_val_2, count2 = findMaxMin_2(A, 0, len(A) - 1)
 print(f"방법 2 - 최솟값: {min_val_2}, 최댓값: {max_val_2}, 비교 횟수: {count2}")
